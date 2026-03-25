@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="./image/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Happy birthday </title>
+</head>
+
+<body>
+
+    <!--login section-->
+    <div id="page1" class="login-section">
+        <div class="login-box">
+            <form id="login-form">
+                <img src="./image/ảnh.jpg" alt="login illustration">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="heart-outline"></ion-icon></span>
+                    <input type="password" id="password" required>
+                    <label for="password">Password</label>
+                </div>
+                <button type="submit">Enter</button>
+            </form>
+        </div>
+    </div>
+
+    <!--celebrate section-->
+    <div id="page2" class="celebrate-section" style="display: none">
+        <canvas id="c"></canvas>
+        <div id="cake-design" class="cake">
+            <div class="plate"></div>
+            <div class="layer layer-bottom"></div>
+            <div class="layer layer-middle"></div>
+            <div class="layer layer-top"></div>
+            <div class="icing"></div>
+            <div class="drip drip1"></div>
+            <div class="drip drip2"></div>
+            <div class="drip drip3"></div>
+            <div class="candle">
+                <div class="flame"></div>
+            </div>
+        </div>
+        <button class="btn">NEXT</button>
+    </div>
+
+    <!--letter section-->
+    <div id="page3" class="love-section" style="display: none">
+        <div class="envelope-wrapper">
+            <div id="envelope" class="close">
+                <div class="front flap"></div>
+                <div class="front pocket"></div>
+                <div class="letter">
+<div class="words line1">GỬI 1M5 LÀM TRÒN,</div>
+<div class="words line2">Trong khoảnh khắc đặc biệt này,</div>
+<div class="words line3">Anh muốn gửi đến em những lời chúc ngọt ngào nhất.</div>
+<div class="words line4">Chúc em tuổi mới rạng rỡ như ánh bình minh,</div>
+<div class="words line5">Xinh đẹp và duyên dáng như những đóa hoa mùa xuân.</div>
+<div class="words line6">Mong rằng mỗi phút giây trong cuộc đời em</div>
+<div class="words line7">Sẽ ngập tràn niềm vui và hạnh phúc.</div>
+<div class="words line9">Để mỗi ngày của em đều trở nên đặc biệt và ý nghĩa.</div>
+<div class="words line10">SINH NHẬT VUI VẺ NHE!</div>
+<div class="words line11">♥ From 1M8 ♥</div>
+                </div>
+
+                <div class="hearts">
+                    <div class="heart a1"></div>
+                    <div class="heart a2"></div>
+                    <div class="heart a3"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reset">
+            <button id="open">Open</button>
+            <button id="reset">Close</button>
+        </div>
+    </div>
+
+    <audio autoplay loop muted>
+        <source src="./music/audio1.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
